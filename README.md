@@ -1,4 +1,6 @@
 # ThemeLite
+
+<img src="https://user-images.githubusercontent.com/77783694/105413416-593b9b00-5c36-11eb-9d34-7cc28ff5e10f.png">
 A Java library for implementing dark theme easily in android apps.
 
 # Features
