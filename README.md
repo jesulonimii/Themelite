@@ -14,7 +14,7 @@ Step 1. Add this in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.erliteHq:themelite:1.0'
+	        implementation 'com.github.erliteHq:themelite:1.1.0'
 	}
 	
 Step 3. Duplicate your Values folder in res and rename as "values-night"
