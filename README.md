@@ -1,14 +1,14 @@
 # ThemeLite
 A Java library for implementing dark theme easily in android apps.
 
-### Features
-*Easy Implentation
-*Saves the theme even when app restart
+# Features
+* Easy Implentation
+* Saves the theme even when app restart
 
 
 
 # Implementation
-Step 1. Add this in your root build.gradle at the end of repositories:
+* ####Step 1. Add this in your root build.gradle at the end of repositories:
 
 	allprojects {
 		repositories {
@@ -16,19 +16,19 @@ Step 1. Add this in your root build.gradle at the end of repositories:
 			maven { url 'https://jitpack.io' }
 		}
 	}
-Step 2. Add the dependency
+* ###Step 2. Add the dependency
 
 	dependencies {
 	        implementation 'com.github.erliteHq:themelite:1.1.0'
 	}
 	
-Step 3. Duplicate your Values folder in res and rename as "values-night"
+* ###Step 3. Duplicate your Values folder in res and rename as "values-night"
 
-Step 4. In your colors xml file, set the corresponding dark theme colors.
+* ###Step 4. In your colors xml file, set the corresponding dark theme colors.
 	
-Step 5. Create a Switch in your layout file
+* ###Step 5. Create a Switch in your layout xml file
 
-Step 6.  Add this to your activity
+* ###Step 6.  Add this to your activity
 
 ```
   @Override
@@ -77,9 +77,9 @@ Step 6.  Add this to your activity
 
     }
   ```
- et Voila!
+ ### et Voila!
 
-### Preview
+# Preview
 ![Preview screenshot]()
 
 
