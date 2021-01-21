@@ -26,7 +26,7 @@ A Java library for implementing dark theme easily in android apps.
 	
 ### Step 3. Duplicate your Values folder in res and rename as "values-night" *(ignore the parenthesis)*
 
-### Step 4. In your colors xml file, set the corresponding dark theme colors.
+### Step 4. In your colors-night xml file, set the corresponding dark theme colors for the colors in the colors xml file.
 	
 ### Step 5. Create a Switch in your layout xml file.
 
@@ -85,6 +85,20 @@ A Java library for implementing dark theme easily in android apps.
 <img src="https://user-images.githubusercontent.com/77783694/105400978-e5919200-5c25-11eb-8803-e020efaa5deb.png" width="40%">
 <img src="https://user-images.githubusercontent.com/77783694/105400814-b713b700-5c25-11eb-9168-b8f010ec11fe.png" width="40%">
 
+## psst..just a tip!
+For smooth transitions between light mode and dark mode add this to your styles xml file
+```
+//Base Application theme
+<style name="AppTheme" parent="Theme.AppCompat.Light.xxx">
+...
+...
+ <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+</style>
 
-
+<style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+```
+Don't forget to add it to your styles-night file too!
 
