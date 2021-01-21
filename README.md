@@ -80,8 +80,8 @@ A Java library for implementing dark theme easily in android apps.
  ### et Voila!
 
 # Preview
-<img src="https://user-images.githubusercontent.com/77783694/105400978-e5919200-5c25-11eb-8803-e020efaa5deb.png" width="50%">
-<img src="https://user-images.githubusercontent.com/77783694/105400814-b713b700-5c25-11eb-9168-b8f010ec11fe.png" width="400">
+<img src="https://user-images.githubusercontent.com/77783694/105400978-e5919200-5c25-11eb-8803-e020efaa5deb.png" width="40%">
+<img src="https://user-images.githubusercontent.com/77783694/105400814-b713b700-5c25-11eb-9168-b8f010ec11fe.png" width="40%">
 
 
 
