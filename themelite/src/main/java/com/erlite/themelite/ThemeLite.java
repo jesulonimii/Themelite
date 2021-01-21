@@ -9,11 +9,14 @@ public class ThemeLite {
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    public int setTheme;
+    public int setTheme, light, dark;
 
     public ThemeLite(Context context){
 
         sharedPreferences = context.getSharedPreferences("darkLite", Context.MODE_PRIVATE);
+
+        light  = AppCompatDelegate.MODE_NIGHT_NO;
+        dark = AppCompatDelegate.MODE_NIGHT_YES;
 
         //fetch theme for shared prefs
         setTheme = sharedPreferences.getInt("ThemeValue", 1);
