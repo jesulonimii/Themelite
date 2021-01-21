@@ -1,8 +1,13 @@
-# Themelite
+# ThemeLite
 A Java library for implementing dark theme easily in android apps.
 
+### Features
+*Easy Implentation
+*Saves the theme even when app restart
 
-# implementation
+
+
+# Implementation
 Step 1. Add this in your root build.gradle at the end of repositories:
 
 	allprojects {
@@ -23,24 +28,24 @@ Step 4. In your colors xml file, set the corresponding dark theme colors.
 	
 Step 5. Create a Switch in your layout file
 
-Step 6.  
+Step 6.  Add this to your activity
 
-// @Override
+```
+  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
-        //initialize themelite
-      themeLite = new ThemeLite(this);
-      
-      //declare 
-      darkSwitch = findViewById(R.id.darkSwitch);
-      textview = findViewById(R.id.textView);
+        setContentView(R.layout.activity_###);
 
-      
+        //initialize ThemeLite
+      themeLite = new ThemeLite(this);
+
+      //declare
+      darkSwitch = findViewById(R.id.darkSwitch);
+
+
       //set theme
         themeLite.setTheme();
-        
+
         //set switch state dependent on theme
         if (themeLite.getTheme == themeLite.dark){
             darkSwitch.setChecked(true);
@@ -52,11 +57,9 @@ Step 6.
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if(isChecked){
-                    themeLite.light();
-                    recreate();
-                } else {
                     themeLite.dark();
-                    recreate();
+                } else {
+                    themeLite.light();
                 }
 
             }
@@ -65,7 +68,7 @@ Step 6.
 
     }
 
-    //save theme for app restart
+    //save theme for app restart in splash or main activity
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -73,9 +76,11 @@ Step 6.
         themeLite.saveTheme(this);
 
     }
+  ```
+ et Voila!
 
-
-
+### Preview
+![Preview screenshot]()
 
 
 
