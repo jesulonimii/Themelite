@@ -24,7 +24,7 @@ A Java library for implementing dark theme easily in android apps.
 	        implementation 'com.github.erliteHq:themelite:1.1.0'
 	}
 	
-### Step 3. Duplicate your Values folder in res and rename as "values-night" *(ignore the parenthesis)*
+### Step 3. Duplicate your Values folder in res and rename as "values-night" *(ignore the quote marks)*
 
 ### Step 4. In your colors-night xml file, set the corresponding dark theme colors for the colors in the colors xml file.
 	
