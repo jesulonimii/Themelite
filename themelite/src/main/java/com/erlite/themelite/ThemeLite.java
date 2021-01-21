@@ -10,7 +10,7 @@ public class ThemeLite {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     public int setTheme;
-    
+
 
     public ThemeLite(Context context){
 
@@ -34,6 +34,10 @@ public class ThemeLite {
         editor.putInt("ThemeValue", setTheme);
         editor.apply();
 
+    }
+
+    public void setTheme(){
+        AppCompatDelegate.setDefaultNightMode(setTheme);
     }
 
     public void light(){
