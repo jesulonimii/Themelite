@@ -9,7 +9,7 @@ public class ThemeLite {
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    int setTheme;
+    public int setTheme;
 
     public ThemeLite(Context context){
 
