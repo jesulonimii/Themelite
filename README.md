@@ -45,7 +45,7 @@ A Java library for implementing dark theme easily in android apps.
       darkSwitch = findViewById(R.id.darkSwitch);
 
 
-      //set theme
+      //set theme in splash or main activity
         themeLite.setTheme();
 
         //set switch state dependent on theme
@@ -70,7 +70,7 @@ A Java library for implementing dark theme easily in android apps.
 
     }
 
-    //save theme for app restart in splash or main activity
+    //save theme for app restart in closing activity
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
