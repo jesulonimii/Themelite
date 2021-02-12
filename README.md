@@ -1,6 +1,7 @@
 # ThemeLite
 
 <img src="https://user-images.githubusercontent.com/77783694/105413416-593b9b00-5c36-11eb-9d34-7cc28ff5e10f.png">
+
 A Java library for implementing dark theme easily in android apps.
 
 # Features
@@ -49,7 +50,7 @@ A Java library for implementing dark theme easily in android apps.
         themeLite.setTheme();
 
         //set switch state dependent on theme
-        if (themeLite.getTheme == themeLite.dark){
+        if (themeLite.getTheme == themeLite.isDark){
             darkSwitch.setChecked(true);
         }
 
@@ -59,9 +60,9 @@ A Java library for implementing dark theme easily in android apps.
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if(isChecked){
-                    themeLite.dark();
+                    themeLite.setDark();
                 } else {
-                    themeLite.light();
+                    themeLite.setLight();
                 }
 
             }
