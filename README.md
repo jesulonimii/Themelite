@@ -5,8 +5,8 @@
 A Java library for implementing dark theme easily in android apps.
 
 # Features
-* Easy Implentation
-* Saves the theme even when app restart
+* Easy Implentation;
+* Saves the theme even when app restarts.
 
 
 
