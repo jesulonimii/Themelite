@@ -103,3 +103,7 @@ For smooth transitions between light mode and dark mode add this to your styles 
 ```
 Don't forget to add it to your styles-night file too!
 
+
+##Connect 
+Twitter: <a href="https://twitter.com/erliteHq">@erliteHq</a>
+	 <a href="https://twitter.com/jesulonimii">@jesulonimii</a>
