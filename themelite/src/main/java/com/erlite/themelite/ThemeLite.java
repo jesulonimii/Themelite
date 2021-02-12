@@ -7,21 +7,21 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 public class ThemeLite {
 
-    SharedPreferences sharedPreferences;
+    SharedPreferences themeSharedPreferences;
     SharedPreferences.Editor editor;
-    public int getTheme, dark, light;
+    public int getTheme, isDark, isLight;
 
 
     public ThemeLite(Context context){
 
-        sharedPreferences = context.getSharedPreferences("darkLite", Context.MODE_PRIVATE);
+        themeSharedPreferences = context.getSharedPreferences("darkLite", Context.MODE_PRIVATE);
 
 
         //fetch theme for shared prefs
         getTheme = sharedPreferences.getInt("ThemeValue", 1);
 
-        dark = AppCompatDelegate.MODE_NIGHT_YES;
-        light = AppCompatDelegate.MODE_NIGHT_NO;
+        isDark = AppCompatDelegate.MODE_NIGHT_YES;
+        isLight = AppCompatDelegate.MODE_NIGHT_NO;
 
     }
 
@@ -30,8 +30,8 @@ public class ThemeLite {
 
         getTheme = AppCompatDelegate.getDefaultNightMode();
 
-        sharedPreferences = context.getSharedPreferences("darkLite", Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
+        themeSharedPreferences = context.getSharedPreferences("darkLite", Context.MODE_PRIVATE);
+        editor = themeSharedPreferences.edit();
 
         editor.putInt("ThemeValue", getTheme);
         editor.apply();
@@ -42,11 +42,11 @@ public class ThemeLite {
         AppCompatDelegate.setDefaultNightMode(getTheme);
     }
 
-    public void light(){
+    public void setLight(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     }
 
-    public void dark(){
+    public void setDark(){
        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }
 }
