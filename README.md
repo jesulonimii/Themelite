@@ -105,5 +105,4 @@ Don't forget to add it to your styles-night file too!
 
 
 ## Connect
-### Twitter: <a href="https://twitter.com/erliteHq">@erliteHq</a>
-	 <a href="https://twitter.com/jesulonimii">@jesulonimii</a>
+### Twitter: <a href="https://twitter.com/erliteHq">@erliteHq</a>	<a href="https://twitter.com/jesulonimii">@jesulonimii</a>
